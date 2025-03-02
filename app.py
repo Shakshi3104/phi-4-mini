@@ -6,8 +6,7 @@ from timer import stop_watch
 
 @stop_watch
 def generate_text(input_text: str) -> str:
-    # TODO: Replace model_name
-    model_name = "cyberagent/open-calm-small"
+    model_name = "microsoft/Phi-4-mini-instruct"
 
     model = AutoModelForCausalLM.from_pretrained(model_name)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
